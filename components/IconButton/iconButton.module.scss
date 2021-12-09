@@ -1,0 +1,45 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.iconButton {
+
+  margin: $spacing-m;
+  display: inline-block;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: $black;
+  }
+
+  & button:hover,
+  & a:hover {
+    .icon {
+      transform: scale(1.15);
+    }
+  }
+
+  & button:active,
+  & a:active {
+    .icon {
+      background: $black;
+      color: $white;
+    }
+  }
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: $primary;
+  aspect-ratio: 1;
+  transform: none;
+  padding: $spacing-m;
+
+  transition: all 0.1s ease-out;
+}

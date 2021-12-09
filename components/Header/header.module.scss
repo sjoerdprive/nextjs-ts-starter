@@ -1,0 +1,18 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.header {
+  display: grid;
+  place-items: center;
+
+
+  @include mixins.glassmorph();
+
+
+
+}
+
+.link {
+  text-decoration: none;
+  color: #eee;
+}

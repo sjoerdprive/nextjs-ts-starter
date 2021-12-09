@@ -1,0 +1,23 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.text {
+  // color: red;
+  max-width: 70ch;
+}
+
+.slim {
+  margin: 0 !important;
+}
+
+.muted {
+  color: $muted;
+}
+
+.fluid {
+  max-width: unset !important;
+}
+
+.primary {
+  color: $primary
+}

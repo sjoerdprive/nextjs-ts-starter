@@ -1,0 +1,20 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.section {
+  padding: $spacing-l;
+  display: flex;
+  justify-content: center;
+  background-size: cover !important;
+}
+
+.header {
+  display: flex;
+}
+
+.body {}
+
+.hero {
+  min-height: 80vh;
+  align-items: center;
+}

@@ -1,0 +1,41 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.list {
+  padding: 0 $spacing-m;
+}
+
+.inline {
+  padding: 0;
+}
+
+.none {
+  list-style-type: none;
+}
+
+.listItem {
+
+  display: flex;
+  align-items: center;
+
+  margin: $spacing-m 0;
+  color: $muted;
+
+  &.slim {
+    margin: 0;
+  }
+}
+
+.default {}
+
+.bullet {
+  list-style-type: disc;
+}
+
+.marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  margin-right: $spacing-m;
+}

@@ -1,0 +1,26 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+@mixin row-base {
+  gap: $spacing-m;
+  margin: $spacing-l 0;
+}
+
+.slim {
+  margin: 0 !important
+}
+
+.row {
+  @include row-base();
+  display: flex;
+
+}
+
+.grid {
+  @include row-base();
+  display: grid;
+
+  @media screen and (max-width: $breakpoint-s) {
+    grid-template-columns: 1fr !important;
+  }
+}

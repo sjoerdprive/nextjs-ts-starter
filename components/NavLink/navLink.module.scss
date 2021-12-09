@@ -1,0 +1,34 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.navlink {
+  text-decoration: none;
+  color: $muted;
+  background: $white;
+  padding: $spacing-s $spacing-m;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
+  display: inline-block;
+
+  &:not(.active):hover {
+    background: $muted;
+    color: $white;
+  }
+}
+
+.fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background: none;
+}
+
+.cta {
+  font-size: $h4-size;
+  padding: $spacing-m $spacing-l;
+  background: $primary;
+}

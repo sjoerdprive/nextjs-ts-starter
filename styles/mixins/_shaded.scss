@@ -1,0 +1,7 @@
+@mixin shaded($distance) {
+  $shadow-color: #eeee;
+  $shadow-spread: 7px;
+  box-shadow: calc(#{$distance} * 2px) calc(#{$distance} * 1px) calc(#{$distance} * #{$shadow-spread}) $shadow-color,
+  calc(#{$distance} * 2.1px) calc(#{$distance} * 0.9px) calc(#{$distance} * #{$shadow-spread}) $shadow-color,
+  calc(#{$distance} * 1.9px) calc(#{$distance} * 1.1px) calc(#{$distance} * #{$shadow-spread}) $shadow-color;
+}

@@ -1,0 +1,35 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.button {
+  border: none;
+  padding: $spacing-s $spacing-m;
+  margin: $spacing-s 0;
+  cursor: pointer;
+  color: $muted;
+
+  background: $primary;
+
+  // border-radius: $border-radius;
+  font-size: $h4-size;
+  padding: $spacing-m $spacing-l;
+
+  transition: all 0.1s ease-out;
+
+
+  &:hover {
+    backdrop-filter: blur(2px);
+    box-shadow: 6px 3px 5px #4441;
+    transform: translate(-1px, -0.5px);
+  }
+
+  &:active {
+    background: $black;
+    color: $white;
+  }
+}
+
+.cta {
+  font-size: $h3-size;
+  padding: $spacing-m $spacing-l;
+}

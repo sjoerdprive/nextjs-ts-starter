@@ -1,0 +1,78 @@
+@use './mixins/'as mixins;
+@import './variables';
+
+$text-margin-modifier-top: 0.4;
+$text-margin-modifier-bottom: 0.6;
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus-visible {
+  outline: 3px solid black;
+  outline-offset: 2px;
+  transition: outline 0.1s ease-out,
+    outline-offset 0.2s ease-out;
+}
+
+* {
+  outline-offset: 10px;
+  outline: 3px solid transparent;
+  transition: none;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  scroll-margin: $spacing-l;
+}
+
+body {
+  color: $black;
+  background: $body-bg;
+
+}
+
+h1,
+.h1 {
+  font-size: $h1-size;
+  margin: calc(#{$h1-size} * #{$text-margin-modifier-top}) 0 calc(#{$h1-size} * #{$text-margin-modifier-bottom}) 0;
+}
+
+h2,
+.h2 {
+  font-size: $h2-size;
+  margin: calc(#{$h2-size} * #{$text-margin-modifier-top}) 0 calc(#{$h2-size} * #{$text-margin-modifier-bottom}) 0;
+
+}
+
+h3,
+.h3 {
+  font-size: $h3-size;
+  margin: calc(#{$h3-size} * #{$text-margin-modifier-top}) 0 calc(#{$h3-size} * #{$text-margin-modifier-bottom}) 0;
+
+}
+
+h4,
+.h4 {
+  font-size: $h4-size;
+  margin: calc(#{$h4-size} * #{$text-margin-modifier-top}) 0 calc(#{$h4-size} * #{$text-margin-modifier-bottom}) 0;
+
+}
+
+h5,
+.h5 {
+  font-size: $h5-size;
+  margin: calc(#{$h5-size} * #{$text-margin-modifier-top}) 0 calc(#{$h5-size} * #{$text-margin-modifier-bottom}) 0;
+
+}
+
+h6,
+.h6 {
+  font-size: $h6-size;
+  margin: calc(#{$h6-size} * #{$text-margin-modifier-top}) 0 calc(#{$h6-size} * #{$text-margin-modifier-bottom}) 0;
+
+}

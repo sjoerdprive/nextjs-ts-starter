@@ -1,0 +1,67 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.card {
+  // @include glassmorph.glassmorph;
+
+  @include mixins.shaded(1);
+  border-radius: $border-radius;
+  overflow: hidden;
+  // padding: $spacing-m;
+
+
+
+  &.withFooter {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  &.withHeader {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  &.withHeader.withFooter {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+  }
+}
+
+.premium {
+  & .header {
+    background: rgb(152, 255, 235);
+    background: linear-gradient(117deg, rgba(152, 255, 235, 1) 0%,  rgba(70, 251, 252, 1) 100%);
+
+  }
+}
+
+.gold {
+  & .header {
+    background: rgb(255, 215, 97);
+    background: linear-gradient(117deg, rgba(255, 215, 97, 1) 0%,  rgba(255, 191, 0, 1) 100%);
+  }
+}
+
+.silver {
+  & .header {
+    background: rgb(228, 230, 230);
+    background: linear-gradient(117deg, rgba(228, 230, 230, 1) 0%,  rgba(214, 214, 214, 1) 100%);
+
+  }
+}
+
+.header,
+.body,
+.footer {
+  padding: $spacing-s $spacing-l;
+}
+
+.header {}
+
+.body {
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}

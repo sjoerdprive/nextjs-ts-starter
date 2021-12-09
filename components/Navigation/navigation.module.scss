@@ -1,0 +1,16 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+.navigation {
+
+  display: flex;
+  align-items: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: $spacing-m;
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,8 @@
+@mixin glassmorph() {
+  backdrop-filter: blur(0);
+  background-color: #fff3;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid #fff3;
+  border-right: 3px solid #fff3;
+  box-shadow: 0; 
+}

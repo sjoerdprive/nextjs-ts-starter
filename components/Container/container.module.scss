@@ -1,0 +1,20 @@
+@use '../../styles/mixins/'as mixins;
+@import '../../styles/variables';
+
+@mixin base-container {
+  width: 100%;
+}
+
+.container {
+  @include base-container;
+
+  @media screen and (min-width: $breakpoint-s) {
+
+    max-width: $max-container-width;
+  }
+}
+
+.containerFluid {
+  @include base-container;
+
+}
